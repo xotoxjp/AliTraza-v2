@@ -82,8 +82,8 @@
         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Acciones:</h6>
-            <a class="collapse-item" href="estado.php">Estado Pedido</a>
-            <a class="collapse-item" href="almacenes.php">Envío Almacenes</a>
+            <a class="collapse-item" href="#">Estado Pedido</a> <!-- href="estado.php" -->
+            <a class="collapse-item" href="#">Envío Almacenes</a> <!-- href="almacenes.php" -->
           </div>
         </div>
       </li>
@@ -104,9 +104,9 @@
         <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Acciones:</h6>
-            <a class="collapse-item" href="exportar.php">Planilla Exportación</a>
-            <a class="collapse-item" href="exportado.php">Estado Exportación</a>
-            <a class="collapse-item" href="clientes.php">Clientes</a>
+            <a class="collapse-item" href="#">Planilla Exportación</a> <!-- href="exportar.php" -->
+            <a class="collapse-item" href="#">Estado Exportación</a>  <!-- href="exportado.php" -->
+            <a class="collapse-item" href="#">Clientes</a>      <!-- href="clientes.php" -->
           </div>
         </div>
       </li>
