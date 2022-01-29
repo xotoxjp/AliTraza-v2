@@ -29,7 +29,6 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-
             <div class="table-responsive">   
                 <table id="tablaDefAnalisis" class="table table-striped table-bordered table-condensed" style="width:100%">
                     <thead class="text-center">
@@ -123,8 +122,7 @@
                 </form>    
             </div>
         </div>
-    </div>  
-
+    </div>
 
 </div>
 <!--FIN del cont principal-->

@@ -24,7 +24,7 @@ $(document).ready(function(){
     });
     
     $("#btnNuevaDefAnalisis").click(function(){
-        $("#modalCRUDTipoAnalisis").trigger("reset");
+        $("#formTipoAnalisis").trigger("reset");
         $(".modal-header").css("background-color", "#1cc88a");
         $(".modal-header").css("color", "white");
         $(".modal-title").text("Nueva Definición de Análisis");            
@@ -54,15 +54,12 @@ $(document).ready(function(){
         $("#limite_inferior").val(limite_inferior);
         $("#limite_superior").val(limite_superior);
         $("#aplica_rechazo").val(aplica_rechazo);
-
-
         opcion = 2; //editar
         
         $(".modal-header").css("background-color", "#4e73df");
         $(".modal-header").css("color", "white");
         $(".modal-title").text("Editar Definición");            
-        $("#modalCRUDTipoAnalisis").modal("show");  
-        
+        $("#modalCRUDTipoAnalisis").modal("show");         
     });
 
     //botón BORRAR
@@ -102,7 +99,7 @@ $(document).ready(function(){
             dataType: "json",
             data: {id:id,nomenclador:nomenclador,detalle:detalle, unidad:unidad, limite_inferior:limite_inferior, limite_superior:limite_superior,aplica_rechazo:aplica_rechazo,opcion:opcion},
             success: function(data){
-                //id = data[0].id;
+                id = data[0].id;
                 //nomenclador = data[0].nomenclador;
                 //detalle = data[0].detalle;
                 //unidad = data[0].unidad;

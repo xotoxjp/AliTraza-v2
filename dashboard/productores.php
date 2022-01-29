@@ -146,7 +146,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
+                        <button type="submit" id="btnGuardarProd" class="btn btn-dark">Guardar</button>
                     </div>
                 </form>    
             </div>

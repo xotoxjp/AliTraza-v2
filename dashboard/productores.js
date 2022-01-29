@@ -85,7 +85,7 @@ $(document).ready(function(){
                 dataType: "json",
                 data: {opcion:opcion, id:id},
                 success: function(){
-                    console.log(fila.parents('tr'));
+                    //console.log(fila.parents('tr'));
                     tablaProductores.row(fila.parents('tr')).remove().draw();
                 }
             });

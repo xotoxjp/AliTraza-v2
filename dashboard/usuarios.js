@@ -24,14 +24,14 @@ $(document).ready(function(){
         }
     });
 
-    $("#btnNuevoUs").click(function(){
+    $("#btnNuevoUser").click(function(){
         $("#formUsuarios").trigger("reset");
         $(".modal-header").css("background-color", "#1cc88a");
         $(".modal-header").css("color", "white");
         $(".modal-title").text("Nuevo Usuario");            
-        $("#modalCRUD").modal("show");        
+        $("#modalUserNuevoCRUD").modal("show");        
         id=null;
-        opcion = 2; //modificacion
+        opcion = 1; //creacion
     });
 
     var fila; //capturar la fila para editar o borrar el registro
@@ -44,9 +44,9 @@ $(document).ready(function(){
         password = fila.find('td:eq(2)').text();
         acceso = fila.find('td:eq(3)').text();
         
-        $("#id").val(id);
+        $("#userid").val(id);
         $("#usuario").val(usuario);
-        $("#password").val(password);
+        $("#pass").val(password);
         $("#acceso").val(acceso);
         opcion = 2; //editar
         
@@ -54,7 +54,7 @@ $(document).ready(function(){
         $(".modal-header").css("color", "white");
         $(".modal-title").text("Editar Usuario");   
         $("#user").val(usuario);         
-        $("#modalCRUD").modal("show");  
+        $("#modalUserCRUD").modal("show");  
         
     });
 
@@ -71,23 +71,24 @@ $(document).ready(function(){
                 dataType: "json",
                 data: {opcion:opcion, id:id},
                 success: function(){
-                    tablaPersonas.row(fila.parents('tr')).remove().draw();
+                    tablaUsuarios.row(fila.parents('tr')).remove().draw();
                 }
             });
         }   
     });
 
     $("#formUsuarios").submit(function(e){
-        e.preventDefault();    
+        e.preventDefault();  
+        id = $.trim($("#userid").val());
         nombre = $.trim($("#user").val());
         acceso = $.trim($("#acceso").val()); 
+        password = $.trim($("#pass").val());
         $.ajax({
             url: "bd/crudUser.php",
             type: "POST",
             dataType: "json",
-            data: {nombre:nombre, acceso:acceso, opcion:opcion},
-            success: function(data){  
-                //console.log(data);
+            data: {id:id,nombre:nombre, password:password, acceso:acceso, opcion:opcion},
+            success: function(data){
                 id = data[0].id;            
                 nombre = data[0].usuario;
                 password = data[0].password;
@@ -96,7 +97,29 @@ $(document).ready(function(){
                 else{tablaUsuarios.row(fila).data([id,nombre,password,acceso]).draw();}            
             }        
         });
-        $("#modalCRUD").modal("hide"); 
+        $("#modalUserCRUD").modal("hide"); 
+    });
+
+    $("#formUsuariosNuevos").submit(function(e){
+        e.preventDefault();    
+        nombre = $.trim($("#userN").val());
+        acceso = $.trim($("#accesoN").val()); 
+        password = $.trim($("#passN").val()); 
+        $.ajax({
+            url: "bd/crudUser.php",
+            type: "POST",
+            dataType: "json",
+            data: {nombre:nombre, password:password, acceso:acceso, opcion:opcion},
+            success: function(data){
+                id = data[0].id;            
+                nombre = data[0].usuario;
+                password = data[0].password;
+                acceso = data[0].tipo;
+                if(opcion == 1){tablaUsuarios.row.add([id,nombre,password,acceso]).draw();}
+                else{tablaUsuarios.row(fila).data([id,nombre,password,acceso]).draw();}            
+            }        
+        });
+        $("#modalUserNuevoCRUD").modal("hide"); 
     });
 
 });
