@@ -48,6 +48,6 @@ El sistema en esta industria está enfocado en empresas dedicadas a la exportaci
 El Sistema tiene como base como Dashboard a [SB Admin 2](https://startbootstrap.com/theme/sb-admin-2)
 Que es una theme Open Source desarrollado con Bootstrap 4 y posibilita un diseño moderno inspirado por los principios de diseño de materiales, además de un sistema de colores simples y atracivos.
 
-Como frameworks de frontend se utilizó [Datatables](https://datatables.net/) para la visualización de tablas
-Javascript con [Jquery](https://jquery.com/)
-Como backend se utilizó PHP5 bajo un stack LAMP
+Alguno de los frameworks de frontend se utilizados es [Datatables](https://datatables.net/) para la visualización de tablas.
+También se utilizó Javascript con [Jquery](https://jquery.com/).
+Como backend se utilizó PHP5 bajo un stack LAMP.
