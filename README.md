@@ -42,3 +42,12 @@ El sistema en esta industria está enfocado en empresas dedicadas a la exportaci
      - Permite un control jerárquico de la generación de las órdenes de compra, permitiendo que solo aquellas que cuentan con la debida autorización sean emitidas.
      - Permite la generación de claves de aprobación para usuarios con permisos especiales, de modo que puedan corroborar que ordenes de compra son emitidas y cuáles no.
      - Permite la eliminación de muestras desestimadas, por calidad u otros motivos.
+
+
+## Desarrollo
+El Sistema tiene como base como Dashboard a [SB Admin 2](https://startbootstrap.com/theme/sb-admin-2)
+Que es una theme Open Source desarrollado con Bootstrap 4 y posibilita un diseño moderno inspirado por los principios de diseño de materiales, además de un sistema de colores simples y atracivos.
+
+Como frameworks de frontend se utilizó [Datatables](https://datatables.net/) para la visualización de tablas
+Javascript con [Jquery](https://jquery.com/)
+Como backend se utilizó PHP5 bajo un stack LAMP
