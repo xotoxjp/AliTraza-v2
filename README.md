@@ -52,3 +52,23 @@ Alguno de los frameworks de frontend se utilizados es [Datatables](https://datat
 También se utilizó Javascript con [Jquery](https://jquery.com/).
 
 Como backend se utilizó PHP5 bajo un stack LAMP.
+
+## Capturas
+
+#### Pantalla de Inicio
+![](https://github.com/xotoxjp/AliTraza-v2/blob/d8fbb9f4f15bcef1fd44f8376a268a3848a891fb/assets/img/01.Pantalla%20Login.png)
+![](https://github.com/xotoxjp/AliTraza-v2/blob/d8fbb9f4f15bcef1fd44f8376a268a3848a891fb/assets/img/02.Pantalla%20Login.png)
+
+#### Dashboard Estadísticas
+![](https://github.com/xotoxjp/AliTraza-v2/blob/d8fbb9f4f15bcef1fd44f8376a268a3848a891fb/assets/img/03.Pantalla%20Dashboard.png)
+
+#### Módulo de Gestión de Usuarios
+![](https://github.com/xotoxjp/AliTraza-v2/blob/d8fbb9f4f15bcef1fd44f8376a268a3848a891fb/assets/img/04.Pantalla%20User%20Admin.png)
+
+#### Módulo de Compras
+![](https://github.com/xotoxjp/AliTraza-v2/blob/d8fbb9f4f15bcef1fd44f8376a268a3848a891fb/assets/img/05.Pantalla%20ABM%20Productores.png)
+![](https://github.com/xotoxjp/AliTraza-v2/blob/d8fbb9f4f15bcef1fd44f8376a268a3848a891fb/assets/img/06.Pantalla%20Alta%20Planila%20Presupuesto.png)
+
+#### Módulo de Laboratorio
+![](https://github.com/xotoxjp/AliTraza-v2/blob/d8fbb9f4f15bcef1fd44f8376a268a3848a891fb/assets/img/07.Pantalla%20Datos%20Laboratorio.png)
+![](https://github.com/xotoxjp/AliTraza-v2/blob/d8fbb9f4f15bcef1fd44f8376a268a3848a891fb/assets/img/08.Pantalla%20Definicion%20Laboratorio.png)
