@@ -50,4 +50,5 @@ Que es una theme Open Source desarrollado con Bootstrap 4 y posibilita un diseñ
 
 Alguno de los frameworks de frontend se utilizados es [Datatables](https://datatables.net/) para la visualización de tablas.
 También se utilizó Javascript con [Jquery](https://jquery.com/).
+
 Como backend se utilizó PHP5 bajo un stack LAMP.
